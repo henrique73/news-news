@@ -1,7 +1,10 @@
-Comandos para executar o Projeto:
+**Integrantes do Grupo:**
+Henrique Erzinger Dousseau
 
-Entrar na Virtual env:
+**Comandos para executar o Projeto:**
+
+**Entrar na Virtual env:**
 %cd%\venv\Scripts\activate
 
-Executar o projeto:
+**Executar o projeto:**
 waitress-serve --listen=*:5000 app:app
