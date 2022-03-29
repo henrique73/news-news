@@ -1,0 +1,20 @@
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.login-container{
+  background: #e6e6e6 !important;
+}
+
+.card{
+  background: #f2f7f7 !important;
+}
+
+

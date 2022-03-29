@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Noticias</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Esportes</a></li>
+              <li><a class="dropdown-item" href="#">Politica</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news/create">Criar Noticia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/news/list">Listar Noticias</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a class="btn p-0 me-4" href="/login" style="color: aliceblue;">Login</a>
+        </div>
+        <div class="d-flex">
+          <a class="btn p-0 me-2" href="/register" style="color: aliceblue;">Cadastro</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center news-card">
+      <div class="col">
+        <div class="card px-3 pt-3 g-col-4" style="max-width: 32rem">
+          <div>
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <a href="/news/article">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="/news/article" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Categoria
+                </a>
+              </div>
+            </div>
+
+            <a href="/news/article" class="text-dark">
+              <h5>Esse é o titulo da Noticia</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea quae molestiae ad eveniet dolorem
+                iure,
+                ab a dicta, vero magni, nostrum nesciunt pariatur placeat vitae beatae accusantium numquam illo?
+              </p>
+            </a>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card px-3 pt-3 g-col-4" style="max-width: 32rem">
+          <div>
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <a href="/news/article">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="/news/article" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Categoria
+                </a>
+              </div>
+            </div>
+
+            <a href="/news/article" class="text-dark">
+              <h5>Esse é o titulo da Noticia</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea quae molestiae ad eveniet dolorem
+                iure,
+                ab a dicta, vero magni, nostrum nesciunt pariatur placeat vitae beatae accusantium numquam illo?
+              </p>
+            </a>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card px-3 pt-3 g-col-4" style="max-width: 32rem">
+          <div>
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <a href="/news/article">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="/news/article" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Categoria
+                </a>
+              </div>
+            </div>
+
+            <a href="/news/article" class="text-dark">
+              <h5>Esse é o titulo da Noticia</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea quae molestiae ad eveniet dolorem
+                iure,
+                ab a dicta, vero magni, nostrum nesciunt pariatur placeat vitae beatae accusantium numquam illo?
+              </p>
+            </a>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mb-5">
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+      <div class="col">
+        <div class="card px-3 pt-3 g-col-4" style="max-width: 32rem">
+          <div>
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <a href="/news/article">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="/news/article" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Categoria
+                </a>
+              </div>
+            </div>
+
+            <a href="/news/article" class="text-dark">
+              <h5>Esse é o titulo da Noticia</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea quae molestiae ad eveniet dolorem
+                iure,
+                ab a dicta, vero magni, nostrum nesciunt pariatur placeat vitae beatae accusantium numquam illo?
+              </p>
+            </a>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card px-3 pt-3 g-col-4" style="max-width: 32rem">
+          <div>
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <a href="/news/article">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="/news/article" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Categoria
+                </a>
+              </div>
+            </div>
+
+            <a href="/news/article" class="text-dark">
+              <h5>Esse é o titulo da Noticia</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea quae molestiae ad eveniet dolorem
+                iure,
+                ab a dicta, vero magni, nostrum nesciunt pariatur placeat vitae beatae accusantium numquam illo?
+              </p>
+            </a>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card px-3 pt-3 g-col-4" style="max-width: 32rem">
+          <div>
+            <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
+              <a href="/news/article">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-6">
+                <a href="/news/article" class="text-info">
+                  <i class="fas fa-plane"></i>
+                  Categoria
+                </a>
+              </div>
+            </div>
+
+            <a href="/news/article" class="text-dark">
+              <h5>Esse é o titulo da Noticia</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea quae molestiae ad eveniet dolorem
+                iure,
+                ab a dicta, vero magni, nostrum nesciunt pariatur placeat vitae beatae accusantium numquam illo?
+              </p>
+            </a>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
